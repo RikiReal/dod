@@ -1,26 +1,17 @@
-<script>
-  import "../index.scss";
-  import { backend } from "$lib/canisters";
-
-  let greeting = "";
-
-  function onSubmit(event) {
-    const name = event.target.name.value;
-    backend.greet(name).then((response) => {
-      greeting = response;
-    });
-    return false;
-  }
-</script>
-
-<main>
-  <img src="/logo2.svg" alt="DFINITY logo" />
-  <br />
-  <br />
-  <form action="#" on:submit|preventDefault={onSubmit}>
-    <label for="name">Enter your name: &nbsp;</label>
-    <input id="name" alt="Name" type="text" />
-    <button type="submit">Click Me!</button>
-  </form>
-  <section id="greeting">{greeting}</section>
+<main
+  class="flex min-h-screen min-w-full flex-col items-center justify-center gap-20 bg-red-300"
+>
+  <div class="grid grid-cols-3 grid-rows-3 gap-10">
+    <span class="col-span-2 col-start-1 row-start-1 text-9xl">Double</span>
+    <span class="col-start-2 row-start-2 text-center text-9xl">or</span>
+    <span class="col-span-2 col-start-2 row-start-3 text-right text-9xl"
+      >Done</span
+    >
+  </div>
+  <a href="home">
+    <button
+      class="rounded-full border-2 border-black bg-purple-500 px-10 py-3 text-5xl hover:bg-purple-600"
+      >Login!</button
+    >
+  </a>
 </main>
