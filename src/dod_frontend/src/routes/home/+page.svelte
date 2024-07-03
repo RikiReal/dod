@@ -4,7 +4,7 @@
   <!-- Profile sidebar -->
   <aside class="col-start-1 row-span-6 row-start-1 flex flex-col gap-16">
     <img
-      src="user-profile.svg"
+      src="/user-profile.svg"
       alt="User profile"
       class="h-60 w-60 self-center rounded-full border-2 border-black bg-white"
     />
@@ -76,20 +76,20 @@
   <!-- Actions -->
   <h1 class="col-start-2 row-start-6 text-7xl font-bold">Actions</h1>
   <div class="col-start-2 row-start-7 flex flex-row justify-between">
-    <form action="play" method="post">
+    <form action="/play" method="get">
       <button
         class="rounded-full border-2 border-black bg-purple-500 px-10 py-3 text-lg hover:bg-purple-600"
         >Play!</button
       >
     </form>
-    <form action="send">
+    <form action="/send">
       <button
         type="submit"
         class="rounded-full border-2 border-black bg-blue-500 px-10 py-3 text-lg hover:bg-blue-600"
         >Send balance</button
       >
     </form>
-    <form action="logout">
+    <form action="/logout">
       <button
         type="submit"
         class="rounded-full border-2 border-black bg-gray-500 px-10 py-3 text-lg hover:bg-gray-600"

@@ -8,7 +8,7 @@
       >Done</span
     >
   </div>
-  <a href="home">
+  <a href="/home">
     <button
       class="rounded-full border-2 border-black bg-purple-500 px-10 py-3 text-5xl hover:bg-purple-600"
       >Login!</button
